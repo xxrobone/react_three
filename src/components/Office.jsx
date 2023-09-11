@@ -34,7 +34,18 @@ export function Office(props) {
       0
     );
 
-    // the hole office rotation
+      // the hole office rotation
+      
+      tl.current.to(
+        ref.current.rotation,
+        { duration: 1, x: 0, y: Math.PI / 6, z: 0 },
+        0
+      );
+      tl.current.to(
+        ref.current.rotation,
+        { duration: 1, x: 0, y: -Math.PI / 6, z: 0 },
+        1
+      );
 
     // the hole office movement
 
